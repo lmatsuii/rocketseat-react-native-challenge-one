@@ -11,8 +11,18 @@ export function Home() {
           style={styles.input}
         ></TextInput>
         <TouchableOpacity style={[styles.primaryColor, styles.button]}>
-          <Text>+</Text>
+          <Text style={styles.buttonContent}>+</Text>
         </TouchableOpacity>
+      </View>
+      <View style={styles.countRow}>
+        <View style={styles.status}>
+          <Text style={styles.textOne}>Criadas</Text>
+          <Text style={styles.count}>0</Text>
+        </View>
+        <View style={styles.status}>
+          <Text style={styles.textTwo}>Concluídas</Text>
+          <Text style={styles.count}>0</Text>
+        </View>
       </View>
     </View>
   );
